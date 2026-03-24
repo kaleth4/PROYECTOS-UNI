@@ -1,0 +1,22 @@
+Algoritmo repetirs
+     Definir res Como Carácter;
+     Definir nota como real;
+     Definir ca, cr Como Entero;
+     Dimensión nombre[25];
+     Definir nombre Como Carácter;
+     ca=0;
+     cr=0;
+    //se inicia la estructura Repetir
+    Repetir
+        Escribir "Ingrese el nombre de el estudiante ";
+       Leer nombre[25];
+       Escribir "Ingrese la nota del estudiante ";
+      
+      Leer nota;
+      si nota 
+
+Leer  ;
+Escribir "";
+
+
+FinAlgoritmo

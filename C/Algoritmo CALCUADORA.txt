@@ -1,0 +1,33 @@
+Algoritmo CALCUADORA
+  Definir NUMERO;S1,S2,S3,RES Como Entero;
+  Escribir "las opciones del 1 al 3 de acuerdo a la operación ";
+  Leer NUNMERO;
+  Según NUMERO Hacer
+1:
+Escribir "Digite primer numero a sumar";
+Leer S1;
+Escribir "Digite segundo numero a sumar";
+Leer S2;
+res=S1+S2;
+Escribir "El resultado de la suma es ",res;
+2:
+Escribir "Digite primer numero a restar";
+Leer S1;
+Escribir "Digite segundo numero a restar";
+Leer S2;
+res=S1-S2;
+Escribir "El resultado de la resta es ",res;
+3:
+Escribir "Digite primer numero a Multiplicar";
+Leer S1;
+Escribir "Digite segundo numero a Multiplicar";
+Leer S2;
+res=S1*S2;
+Escribir "El resultado de la Multiplicacion es ",res;
+De Otro Modo:
+Escribir "Por favor escribir la opción que desea";
+
+Segun
+
+
+FinAlgoritm4o

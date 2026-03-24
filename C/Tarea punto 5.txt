@@ -1,0 +1,78 @@
+Algoritmo MenuProgramas
+    Definir opcion Como Entero
+    Repetir
+        Escribir "Seleccione una opción del menú:"
+        Escribir "1. Juego de adivinanza de números"
+        Escribir "2. Convertir temperatura de °C a °F"
+        Escribir "3. Determinar aptitud para servicio militar"
+        Escribir "4. Calcular comisión de ventas"
+        Escribir "5. Salir"
+        Leer opcion
+
+        Segun opcion Hacer
+            Caso 1:
+                // Juego de adivinanza
+                Definir numero, adivino Como Entero
+                numero <- Aleatorio(1,100)
+                Repetir
+                    Escribir "Adivina el número (entre 1 y 100): "
+                    Leer adivino
+                    Si adivino < numero Entonces
+                        Escribir "El número es mayor"
+                    SiNo
+                        Si adivino > numero Entonces
+                            Escribir "El número es menor"
+                        Fin Si
+                    Fin Si
+                Hasta Que adivino = numero
+                Escribir "¡Felicidades! Adivinaste el número."
+            Fin Caso
+
+            Caso 2:
+                // Conversión de temperatura
+                Definir celsius, fahrenheit Como Real
+                Escribir "Ingrese la temperatura en grados Celsius: "
+                Leer celsius
+                fahrenheit <- (celsius * 9/5) + 32
+                Escribir "La temperatura en Fahrenheit es: ", fahrenheit
+            Fin Caso
+
+            Caso 3:
+                // Servicio militar
+                Definir edad Como Entero
+                Definir nacionalidad, genero Como Cadena
+                Escribir "Ingrese su edad: "
+                Leer edad
+                Escribir "Ingrese su nacionalidad: "
+                Leer nacionalidad
+                Escribir "Ingrese su género (masculino/femenino): "
+                Leer genero
+                Si edad >= 18 Y edad < 25 Y nacionalidad = "colombiana" Y genero = "masculino" Entonces
+                    Escribir "Usted es apto para prestar el servicio militar obligatorio."
+                SiNo
+                    Escribir "Usted no es apto para prestar el servicio militar obligatorio."
+                Fin Si
+            Fin Caso
+
+            Caso 4:
+                // Comisión de ventas
+                Definir venta, comision Como Real
+                Escribir "Ingrese el monto de la venta: "
+                Leer venta
+                Si venta < 1000000 Entonces
+                    comision <- venta * 0.03
+                SiNo
+                    comision <- venta * 0.05
+                Fin Si
+                Escribir "La comisión correspondiente es: $", comision
+            Fin Caso
+
+            Caso 5:
+                Escribir "Saliendo del programa. ¡Hasta luego!"
+            Fin Caso
+
+            De Otro Modo:
+                Escribir "Opción no válida. Intente de nuevo."
+        Fin Segun
+    Hasta Que opcion = 5
+Fin Algoritmo
